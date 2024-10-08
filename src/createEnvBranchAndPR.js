@@ -68,7 +68,7 @@ const createEnvBranchAndPR = async (env) => {
             ""
         );
         const prTitle = `${branchNameWithoutPrefix} ${targetBranch}`;
-        let prCommand = `gh pr create --base ${targetBranch} --head ${newBranch} --title "${prTitle}"`;
+        let prCommand = `gh pr create --base ${targetBranch} --body "${branchNameWithoutPrefix}" --head ${newBranch} --title "${prTitle}"`;
         const prUrl = execSync(prCommand).toString().trim();
         vscode.env.openExternal(vscode.Uri.parse(prUrl));
         vscode.window.showInformationMessage(`Created PR: ${prUrl}`);

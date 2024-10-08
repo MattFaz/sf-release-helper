@@ -1,5 +1,9 @@
 # Change Log
 
+**v1.0.4**
+
+-   Bug: PRs weren't creating because there was no body, body now defaults to Ticket number
+
 **v1.0.3**
 
 -   Enhancement: Better handling of PR creation, setting title based on ticket and target branch

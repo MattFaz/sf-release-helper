@@ -2,7 +2,7 @@
     "name": "sq-sf-release-helper",
     "displayName": "SF Release Helper",
     "description": "Helper extension for Salesforce Release Process",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "GPL-3.0-only",
     "publisher": "MattFaz",
     "repository": {
