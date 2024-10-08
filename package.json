@@ -1,0 +1,51 @@
+{
+    "name": "sq-sf-release-helper",
+    "displayName": "SF Release Helper",
+    "description": "Helper extension for Salesforce Release Process",
+    "version": "1.0.3",
+    "license": "GPL-3.0-only",
+    "publisher": "MattFaz",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MattFaz/sf-release-helper"
+    },
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "sf-release-helper-sidebar",
+                    "title": "SF Release Helper",
+                    "icon": "assets/icon.svg"
+                }
+            ]
+        },
+        "views": {
+            "sf-release-helper-sidebar": [
+                {
+                    "id": "sf-release-helper-menu",
+                    "name": "Menu"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.7",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.90.0",
+        "eslint": "^8.57.0",
+        "typescript": "^5.4.5"
+    }
+}
