@@ -34,7 +34,7 @@ const deleteBranch = async () => {
 
         return new Promise((resolve) => {
             quickPick.onDidAccept(async () => {
-                const selectedBranch = quickPick.selectedItems[0]?.label;
+                const selectedBranch = quickPick.selectedItems[0] && quickPick.selectedItems[0].label;
                 quickPick.hide();
 
                 if (selectedBranch) {

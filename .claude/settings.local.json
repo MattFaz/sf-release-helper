@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:developer.salesforce.com)",
+      "WebFetch(domain:help.salesforce.com)",
+      "mcp__ide__getDiagnostics",
+      "Bash(sf:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(goose:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(echo:*)"
+    ],
+    "deny": []
+  }
+}

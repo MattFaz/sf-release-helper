@@ -10,7 +10,17 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}"
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"/Users/mfarrell/prod/sq-scs-sf"
+			]
+		},
+		{
+			"name": "Run Extension (with folder)",
+			"type": "extensionHost",
+			"request": "launch",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}",
+				"--folder-uri=file:///Users/mfarrell/prod/sq-scs-sf"
 			]
 		}
 	]
