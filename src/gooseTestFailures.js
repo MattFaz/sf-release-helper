@@ -313,7 +313,6 @@ const formatFailuresForGoose = (failures, deploymentId) => {
 \`\`\`
 ${failure.error}
 \`\`\`
----
 
 `;
     } else if (failure.type === "Test Failure") {
@@ -332,7 +331,6 @@ ${failure.error}
 ${failure.stackTrace}
 \`\`\`
 
----
 `;
     }
   });
@@ -340,9 +338,8 @@ ${failure.stackTrace}
   context += `
 Please Read the below deployment failures and perform the following for each failure:
 1. Identify root cause of the failure
-2. Automatically fix the failure if possible
-3. If it cannot be automatically fixed, provide a manual fix
-4. Update the .sfrh/${deploymentId}.md file to document the root cause and the fix
+2. Automatically edit files to fix failures
+3. Update the .sfrh/${deploymentId}.md file to document the root cause and the fix you made
 
 IMPORTANT: 
 - You have full access to read and modify files in this Salesforce project
