@@ -10,8 +10,7 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}",
-				"/Users/mfarrell/prod/sq-scs-sf"
+				"--extensionDevelopmentPath=${workspaceFolder}"
 			]
 		},
 		{
@@ -19,8 +18,7 @@
 			"type": "extensionHost",
 			"request": "launch",
 			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}",
-				"--folder-uri=file:///Users/mfarrell/prod/sq-scs-sf"
+				"--extensionDevelopmentPath=${workspaceFolder}"
 			]
 		}
 	]
